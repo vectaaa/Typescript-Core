@@ -33,3 +33,16 @@ function loginUser( name: string, password: string, isLoggedIn: boolean = false)
 loginUser("chigold", "password12");
 signUser( "Vecta", 39, "Red" );
 addTwo(4);
+
+
+//Better ways to write functions
+const getHelp = (shoutHelp: string ): string => {
+    return "Help chigo!!"
+}
+
+const heros = [ "Spiderman", "superman", "batman"];
+
+heros.map((hero) : string => {
+    return `hero is ${hero}`
+});
+
