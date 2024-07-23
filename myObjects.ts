@@ -49,3 +49,17 @@ let myUser = {
 
 myUser.email = 'vecta@gmail.com';
 console.log(myUser.email)
+
+
+//Mix and match of types
+
+type cardNumber = {
+    cardnumber: number
+}
+
+type cardName = {
+    cardName: string
+}
+type cardDetails = cardName & cardNumber & {
+    cardcvv: number
+}
